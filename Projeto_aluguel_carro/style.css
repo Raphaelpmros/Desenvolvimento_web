@@ -1,0 +1,143 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    list-style: none;
+    text-decoration: none;
+}
+
+header {
+    height: 150px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    width: 100%;
+}
+
+nav{
+    width: 60%;
+
+}
+
+ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+li{
+    list-style: none;
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 19px;
+    transition: .5s;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    
+}
+
+li:hover{
+    color: #A7834A;
+}
+
+#logo{
+    width: 250px;
+    height: auto;
+}
+
+.banner{
+    background-image: url(./assets/bmw.jpg); 
+    background-position:  50% 90%;
+    background-size: auto;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 600px;
+    color: white;
+    
+}  
+
+/* #destaques{
+    text-align: center; Centralize o conteúdo da seção 
+}
+
+#carouselExampleIndicators{
+    height: 750px;
+    max-width: 1000px;
+    margin: 0 auto;  Centralize o carrossel horizontalmente
+
+}
+
+.carousel-indicators{
+    background-color: blueviolet;
+}
+
+.carousel-inner{
+    text-align: center;
+    background-color: #A7834A;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 500px; 
+}
+.carousel-item {
+    text-align: center; /* Centralize horizontalmente o conteúdo de cada item do carrossel 
+    
+} */
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.carousel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Centraliza o carrossel verticalmente na tela */
+}
+
+.carousel {
+    display: flex;
+    overflow: hidden;
+    width: 80%;
+    max-width: 800px; /* Defina a largura máxima do carrossel */
+    position: relative;
+}
+
+.carousel-slide {
+    flex: 0 0 100%;
+    transition: transform 0.5s ease;
+}
+
+.carousel-slide img {
+    width: 100%;
+    height: auto;
+}
+
+.carousel-prev, .carousel-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.carousel-prev {
+    left: 10px;
+}
+
+.carousel-next {
+    right: 10px;
+}
+
+
+
+
