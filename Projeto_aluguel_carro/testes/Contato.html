@@ -9,26 +9,51 @@
 </head>
 <body>
     <div class="body">
-        <header>
-            <img id="logo" src="./WhatsApp Image 2023-09-05 at 20.43.53.jpeg">
-            <nav>
-                <ul>
-                    <a href="./PaginaInicial.html">
-                        <li>Home</li>
-                    </a>
-
-                    <a href="./Contato.html">
-                        <li>Contatos</li>
-
-                    <a href="./Login.html">
-                        <li>Login</li>
-                        
-                    <a href="./Comentarios.html">
-                        <li>Comentários</li>
-                    </a>
-                </ul>
+        <header id="navbar">
+            <nav class="navbar navbar-expand-lg bg-dark">
+                <img id="logo" src="./WhatsApp Image 2023-09-05 at 20.43.53.jpeg">
+                <div class="container-fluid">
+                <a class="navbar-brand" href="#"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="PaginaInicial.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Reservas.html">Reservas</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Categorias
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="Economico.html">Economico</a></li>
+                            <li><a class="dropdown-item" href="Intermediario.html">Intermediario</a></li>
+                            <li><a class="dropdown-item" href="SUV.html">SUV</a></li>
+                            <li><a class="dropdown-item" href="Minivan.html">Minivan</a></li>
+                            <li><a class="dropdown-item" href="Executivo.html">Executivo</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Contato.html">Contatos</a>
+                    </li>
+                    <li class="nav-item">
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Login.html">Login</a>
+                    </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Buscar</button>
+                    </form>
+                </div>
+                </div>
             </nav>
-        </header>
+          </header>
         <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
             <div class="carousel-item active">
