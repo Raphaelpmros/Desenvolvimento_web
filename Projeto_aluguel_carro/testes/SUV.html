@@ -48,13 +48,14 @@
             </div>
         </nav>
     </header>
-   
         <p id="promocao" class="promocao">Destaques</p>
         <section class="vehicle-list">
             <div class="vehicle">
                 <img src="./assets/Img_SUV/Toyota RAV4 2023.jpg" alt="SUV">
                 <h2>Toyota RAV4<br>2023</h2>
                 <p>Um SUV versátil para aventuras familiares e viagens longas.<br> <br> <br>O Toyota RAV4 oferece espaço, conforto e desempenho para todas as suas viagens. Com tração nas quatro rodas e amplo espaço de carga, é perfeito para aventuras ao ar livre e viagens em família. Alugue o Toyota RAV4 hoje e desfrute da versatilidade e confiabilidade deste SUV.</p>
+                <p>Condições do veículo: Amassado na porta do motorista</p>
+                <p>Combustível: Diesel-S10</p>
                 <p>Preço Diária: R$135,00</p>
                 
                 <button type="button" id="reserve-button-rav4">Reservar Veículo</button>
@@ -64,6 +65,8 @@
                 <img src="./assets/Img_SUV/Honda_CR-V_2023.jpg" alt="SUV">
                 <h2>Honda CR-V<br>2023</h2>
                 <p>Um SUV familiar espaçoso com recursos avançados de segurança.<br> <br> <br>O Honda CR-V oferece espaço amplo para passageiros e um interior confortável. Além disso, possui recursos avançados de segurança para tranquilidade durante as viagens em família. Alugue o Honda CR-V hoje e experimente a combinação de espaço e segurança que ele oferece.</p>
+                <p>Condições do veículo: risco na lateral direita</p>
+                <p>Combustível: Diesel-S10</p>
                 <p>Preço Diária: R$135,00</p>
                 
                 <button type="button" id="reserve-button-cr-v">Reservar Veículo</button>
@@ -73,6 +76,8 @@
                 <img src="./assets/Img_SUV/Ford_Explorer_2023.jpg" alt="SUV">
                 <h2>Ford Explorer<br>2023</h2>
                 <p>Um SUV espaçoso e potente para viagens em grande estilo.<br> <br> <br>O Ford Explorer é conhecido por seu espaço generoso e desempenho poderoso. Com uma cabine luxuosa e capacidade de reboque, é perfeito para viagens longas e aventuras familiares. Alugue o Ford Explorer hoje e viaje com grande estilo e conforto.</p>
+                <p>Condições do veículo: Novo</p>
+                <p>Combustível: Diesel-S10</p>
                 <p>Preço Diária: R$135,00</p>
                 
                 <button type="button" id="reserve-button-explorer">Reservar Veículo</button>
@@ -82,83 +87,16 @@
                 <img src="./assets/Img_SUV/Chevrolet_Tahoe_2023.jpg" alt="SUV">
                 <h2>Chevrolet Tahoe<br>2023</h2>
                 <p>Um SUV robusto com capacidade para família e bagagem.<br> <br> <br>O Chevrolet Tahoe é ideal para viagens em família e aventuras ao ar livre. Com seu interior espaçoso e capacidade de carga generosa, pode acomodar confortavelmente todos os passageiros e sua bagagem. Alugue o Chevrolet Tahoe hoje e aproveite as aventuras com toda a família.</p>
+                <p>Condições do veículo: Novo</p>
+                <p>Combustível: Diesel-S10</p>
                 <p>Preço Diária: R$135,00</p>
                 
                 <button type="button" id="reserve-button-tahoe">Reservar Veículo</button>
             </div>
-
-                
-                <section id="reservation" class="reservation-container hidden">
-                    <h2>Reserva de Veículo</h2>
-                    <form id="reservation-form" class="reservation-form">
-                        <label for="pickup-date">Data de Retirada:</label>
-                        <input type="date" id="pickup-date" required>
-        
-                        <label for="return-date">Data de Devolução:</label>
-                        <input type="date" id="return-date" required>
-        
-                        <label for="vehicle-category">Categoria de Veículo:</label>
-                        <select id="vehicle-category" required>
-                            <option value="economico">Econômico</option>
-                            <option value="intermediario">Intermediário</option>
-                            <option value="suv">SUV</option>
-                            <option value="minivan">Minivan</option>
-                            <option value="executivo">Executivo</option>
-                        </select>
-        
-                        <label for="add-options">Opcionais:</label>
-                        <input type="checkbox" id="baby-seat" value="cadeira-bebe">
-                        <label for="baby-seat">Cadeira de Bebê</label>
-                        <input type="checkbox" id="booster-seat" value="direcao-eletrica">
-                        <label for="booster-seat">Direção Elétrica</label>
-                        <input type="checkbox" id="gps" value="gps">
-                        <label for="gps">GPS</label>
-        
-                        <button type="submit">Reservar</button>
-                    </form>
-                </section>
-
-                
-                
-
-            </div>
-            <section id="reservation" class="reservation-container">
-                <h2>Reserva de Veículo</h2>
-                <form id="reservation-form" class="reservation-form">
-                    <label for="pickup-date">Data de Retirada:</label>
-                    <input type="date" id="pickup-date" required>
-    
-                    <label for="return-date">Data de Devolução:</label>
-                    <input type="date" id="return-date" required>
-    
-                    <label for="vehicle-category">Categoria de Veículo:</label>
-                    <select id="vehicle-category" required>
-                        <option value="economico">Econômico</option>
-                        <option value="intermediario">Intermediário</option>
-                        <option value="suv">SUV</option>
-                        <option value="minivan">Minivan</option>
-                        <option value="executivo">Executivo</option>
-                    </select>
-    
-                    <label for="add-options">Opcionais:</label>
-                    <input type="checkbox" id="baby-seat" value="cadeira-bebe">
-                    <label for="baby-seat">Cadeira de Bebê</label>
-                    <input type="checkbox" id="booster-seat" value="direcao-eletrica">
-                    <label for="booster-seat">Direção Elétrica</label>
-                    <input type="checkbox" id="gps" value="gps">
-                    <label for="gps">GPS</label>
-    
-                    <button type="submit">Reservar</button>
-                </form>
-            </section>
-        </section>
-
-        
-
         <footer>
             <p>&copy; 2023 Aluguel de Veículos</p>
         </footer>
-    </div>
+    </section>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 <script src="./script.js"></script>
