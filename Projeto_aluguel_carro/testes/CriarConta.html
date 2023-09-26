@@ -88,48 +88,28 @@
                 </div>
             </nav>
         </header>
-        
-        
-            <h1>Reserva de Veículos</h1>
-        <form class="container" action="processar_reserva.php" method="POST">
-            
-            
-    
-            <h2 style="color: white">Dados da Reserva</h2>
-            <label style="color: white" for="data_retirada">Data e Hora de Retirada:</label>
-            <input type="datetime-local" id="data_retirada" name="data_retirada" required><br>
-    
-            <label style="color: white" for="data_devolucao">Data e Hora de Devolução:</label>
-            <input type="datetime-local" id="data_devolucao" name="data_devolucao" required><br>
-    
-            <label style="color: white" for="opcionais">Opcionais (selecionar os desejados):</label><br>
-            <input type="checkbox" id="cadeira_bebe" name="opcionais[]" value="cadeira_bebe">
-            <label style="color: white" for="cadeira_bebe">Cadeira de Bebê (R$30/dia)</label><br>
-    
-            <input type="checkbox" id="assento_elevacao" name="opcionais[]" value="assento_elevacao">
-            <label style="color: white" for="assento_elevacao">Assento de Elevação (R$30/dia)</label><br>
-    
-            <input type="checkbox" id="gps" name="opcionais[]" value="gps">
-            <label style="color: white" for="gps">GPS (R$20/dia)</label><br>
-
-            <input type="checkbox" id="condutor-adcional" name="opcionais[]" value="condutor_adcional">
-            <label style="color: white" for="condutor-adcional">Condutor Adcional (R$15/dia)</label>
-
-            <input type="checkbox" id="termos" ńame="termos" value="validar-termos">
-            <label style="color: white" for="termos"> <a href="">Li e aceito os termos!</a></label>
-    
-            <!-- Adicionar campos para opções de veículo e outras informações relevantes da reserva -->
-    
-            <input type="submit" value="Reservar">
-        </form>
-    
-            <!-- Adicionar campos para opções de veículo e outras informações relevantes da reserva -->
-    
-            <input type="submit" value="Reservar">
-        </form>
-    
-        
-
+        <div class="container">
+            <h1 style="color: white;">Novo usuário</h1>
+            <form action="/login" method="post">
+            <label style="color: white;" for="usuario">Nome completo:</label><br>
+            <input style="color: black;" type="text" id="usuario" name="usuario"><br>
+            <label style="color: white;" for="email">E-mail:</label><br>
+            <input style="color: black;" type="text" id="email" name="email"><br>
+            <label style="color: white;" for="senha">Senha:</label><br>
+            <input style="color: black;" type="password" id="senha" name="senha"><br><br>
+            <label style="color: white;" for="confSenha">Confirmar senha:</label><br>
+            <input style="color: black;" type="password" id="confSenha" name="confSenha"><br><br>
+            <label style="color: white;" for="cpf">Cpf:</label><br>
+            <input style="color: black;" type="number" id="cpf" name="cpf"><br>
+            <label style="color: white;" for="numCartao">Numero do cartão:</label><br>
+            <input style="color: black;" type="number" id="numCartao" name="numCartao"><br>
+            <label style="color: white;" for="valCartao">Validade do cartão:</label><br>
+            <input style="color: black;" type="datetime" id="valCartao" name="valCartao"><br>
+            <label style="color: white;" for="codSeguranca">Codigo de segurança:</label><br>
+            <input style="color: black;" type="number" id="codSeguranca" name="codSeguranca"><br>
+            <input style="color: white;" type="submit" value="Criar conta">
+            <a style="color: white;" type="button" href="Login.html">Já possui conta? Retornar para o login</a>
+            </form> 
         <footer>
             <p>&copy; 2023 Aluguel de Veículos</p>
         </footer>
