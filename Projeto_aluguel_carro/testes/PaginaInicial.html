@@ -19,13 +19,13 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="PaginaInicial.html">Home</a>
+                    <a class="nav-link active" aria-current="page" href="PaginaInicial.html" style="color: white;">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="Reservas.html">Reservas</a>
+                    <a class="nav-link" href="Reservas.html" style="color: white;">Reservas</a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: white;">
                         Categorias
                     </a>
                     <ul class="dropdown-menu">
@@ -37,12 +37,7 @@
                     </ul>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="Contato.html">Contatos</a>
-                </li>
-                <li class="nav-item">
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="Login.html">Login</a>
+                    <a class="nav-link" href="Login.html" style="color: white;">Login</a>
                 </li>
                 </ul>
                 <form class="d-flex" role="search">
@@ -83,7 +78,7 @@
                 <p>Carros compactos para o seu dia a dia. Ideal para viagens curtas.<br> <br> <br>O Fiat Mobi é um compacto, ágil e econômico, ideal para suas deslocações urbanas. Com um design compacto e prático, o Mobi oferece facilidade de estacionamento e eficiência no consumo de combustível. Seu interior é confortável e versátil, tornando-o perfeito para viagens urbanas. Alugue o Fiat Mobi hoje e aproveite a mobilidade e a praticidade que ele oferece.</p>
                 <p>Preço Diária: R$85,00 </p>
                 
-                <button type="button" id="reserve-button-mobi">Reservar Veículo</button>
+                <button type="button" id="reserve-button-mobi"><a href="./Reservas.html">Reservar Veículo</a></button>
 
             </div>
 
@@ -92,7 +87,7 @@
                 <h2>Onix<br>2021</h2>
                 <p>Carros hatch ou sedan com mais espaço e conforto.<br> <br> <br>Descubra o Chevrolet Onix, um compacto versátil e econômico, perfeito para suas aventuras urbanas. Com um design moderno e eficiência no consumo de combustível, o Onix oferece conforto e tecnologia para tornar suas viagens ainda mais resistentes. Equipado com recursos de segurança avançados e um interior espaçoso, o Onix é a escolha ideal para explorar a cidade com estilo e praticidade. Alugue o Chevrolet Onix hoje e experimente a combinação perfeita de desempenho e economia.</p>
                 <p>Preço Diária: R$103,00</p>
-                <button type="button" id="reserve-button-onix">Reservar Veículo</button>
+                <button type="button" id="reserve-button-onix"><a href="./Reservas.html">Reservar Veículo</a></button>
 
             </div>
 
@@ -101,7 +96,7 @@
                 <h2>Creta<br>2020</h2>
                 <p>Veículos SUV para aventuras e espaço extra.<br> <br> <br>O Hyundai Creta é um SUV compacto projetado para aventuras urbanas e além. Com um design moderno e robusto, o Creta oferece espaço, conforto e conforto. Equipado com recursos de segurança avançados e uma gama de opções de motorização, o Creta é perfeito para famílias e aventureiros. Alugue o Hyundai Creta e explore a cidade com estilo e confiança.</p>
                 <p>Preço Diária: R$135,00</p>
-                <button type="button" id="reserve-button-creta">Reservar Veículo</button>
+                <button type="button" id="reserve-button-creta"><a href="./Reservas.html">Reservar Veículo</a></button>
 
             </div>
 
@@ -110,7 +105,7 @@
                 <h2>livina<br>2018</h2>
                 <p>Minivans espaçosas para viagens em grupo ou família.<br> <br> <br>O Fiat Mobi é um compacto, ágil e econômico, ideal para suas deslocações urbanas. Com um design compacto e prático, o Mobi oferece facilidade de estacionamento e eficiência no consumo de combustível. Seu interior é confortável e versátil, tornando-o perfeito para viagens urbanas. Alugue o Fiat Mobi hoje e aproveite a mobilidade e a praticidade que ele oferece.</p>
                 <p>Preço Diária: R$158,00</p>
-                <button type="button" id="reserve-button">Reservar Veículo</button>
+                <button type="button" id="reserve-button"><a href="./Reservas.html">Reservar Veículo</a></button>
 
             </div>
 
@@ -120,38 +115,7 @@
                 <p>Carros de luxo para viagens de negócios e conforto extra.<br> <br> <br>O Nissan Livina é um carro familiar versátil que combina espaço, conforto e praticidade. Com amplo espaço para passageiros e bagagem, o Livina é perfeito para viagens em família. Sua tecnologia avançada e eficiência no consumo de combustível garantem uma experiência agradável na estrada. Alugue o Nissan Livina e aproveite viagens confortáveis e sem complicações.</p>
                 
                 <p>Preço Diária: R$230,00</p>
-                <button type="button" id="reserve-button">Reservar Veículo</button>
-
-                
-                <section id="reservation" class="reservation-container hidden">
-                    <h2>Reserva de Veículo</h2>
-                    <form id="reservation-form" class="reservation-form">
-                        <label for="pickup-date">Data de Retirada:</label>
-                        <input type="date" id="pickup-date" required>
-        
-                        <label for="return-date">Data de Devolução:</label>
-                        <input type="date" id="return-date" required>
-        
-                        <label for="vehicle-category">Categoria de Veículo:</label>
-                        <select id="vehicle-category" required>
-                            <option value="economico">Econômico</option>
-                            <option value="intermediario">Intermediário</option>
-                            <option value="suv">SUV</option>
-                            <option value="minivan">Minivan</option>
-                            <option value="executivo">Executivo</option>
-                        </select>
-        
-                        <label for="add-options">Opcionais:</label>
-                        <input type="checkbox" id="baby-seat" value="cadeira-bebe">
-                        <label for="baby-seat">Cadeira de Bebê</label>
-                        <input type="checkbox" id="booster-seat" value="direcao-eletrica">
-                        <label for="booster-seat">Direção Elétrica</label>
-                        <input type="checkbox" id="gps" value="gps">
-                        <label for="gps">GPS</label>
-        
-                        <button type="submit">Reservar</button>
-                    </form>
-                </section>
+                <button type="button" id="reserve-button"><a href="./Reservas.html">Reservar Veículo</a></button>   
             </div>
         <footer>
             <p>&copy; 2023 Aluguel de Veículos</p>
