@@ -1,0 +1,225 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+.body{
+    background-color: black;
+}
+.body-inner{
+    background-color: #fff;
+}
+header {
+    background-color: black;
+    width: 100%;
+    display: inline-block;
+}
+
+
+
+
+
+.navbar navbar-expand-lg bg-body-tertiary{
+    background-color: black;
+    color: #fff;
+    height: 150px;
+}
+
+ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+li{
+    list-style: none;
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 19px;
+    transition: .5s;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    
+}
+
+li:hover{
+    color: #d21617;
+}
+
+
+#logo{
+    width: 250px;
+    height: auto;
+}
+
+#carouselExampleAutoplaying{
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.carousel-inner img {
+    max-width: 100%; /* Defina a largura máxima das imagens como 100% */
+    height: auto; /* Mantenha a proporção da imagem */
+}
+section {
+    margin: 0 auto;
+    padding: 20px;
+    background-color: black;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.promocao{
+    color: white;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+}
+
+input[type="date"],
+select {
+    padding: 5px;
+    margin-top: 5px;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+}
+
+.reservation-container {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 400px;
+}
+
+.reservation-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.reservation-form label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.reservation-form input[type="date"],
+.reservation-form select {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.reservation-form select {
+    appearance: none; /* Remove a seta padrão do select */
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.reservation-form button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.reservation-form button:hover {
+    background-color: #555;
+}
+
+/* #reservation {
+    display: none;
+  } */
+  
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+#classes{
+    display: flex;
+    justify-content: center;
+    color: blue;
+    gap: 20px;
+    height: 150px;
+}
+
+.tipos{
+    display: flex;
+    justify-content: center;
+    height: 80px;
+    margin-top: 50px;
+}
+
+.vehicle-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px auto;
+}
+
+.vehicle {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 20px;
+    column-gap: 40px;
+
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin: 10px;
+    
+    text-align: center;
+}
+
+.vehicle img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.vehicle h2 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.vehicle p {
+    font-size: 1rem;
+    margin: 10px 0;
+}
+
+.hidden{
+    display : none ;
+}
