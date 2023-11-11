@@ -90,25 +90,17 @@
         <form class="container" action="processar_reserva.php" method="POST">
             <h2>Dados da Reserva</h2>
 
-            <!-- <ul class="dropdown-menu">
-                <li>Economico</li>
-                <li>Intermediario</li>
-                <li>SUV</li>
-                <li>Minivan</li>
-                <li>Executivo</li>
-            </ul>
-
+            <div>
+                <label for="categoria">Categoria do Veículo:</label>
+                <select id="categoria" name="categoria">
+                    <option value="economico">Econômico</option>
+                    <option value="intermediario">Intermediário</option>
+                    <option value="suv">SUV</option>
+                    <option value="minivan">Minivan</option>
+                    <option value="executivo">Executivo</option>
+                </select>
+            </div>
             
-                        require("conecta.php");
-
-                        $dados_select = mysqli_query($conn, "SELECT CPF, NOME FROM cliente");
-
-                        echo "<td>Nome do Cliente: <select name='cpf_cliente'>";
-                        while($dado = mysqli_fetch_array($dados_select)) {
-                            echo '<option   value='.$dado[0].'>'.$dado[1].'</option>';
-                        }
-                        echo "</select></td>"; -->
-                    
              
             <label for="data_retirada">Data e Hora de Retirada:</label>
             <input type="datetime-local" id="data_retirada" name="data_retirada" required><br>

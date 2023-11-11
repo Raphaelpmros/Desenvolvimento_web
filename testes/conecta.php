@@ -1,13 +1,16 @@
 <?php
-    $servername = "localhost";
-    $database = "avr_locacoes";
-    $username = "root";
-    $password = "";
+$servername = "localhost";
+$username = "root";
+$password = "root";
+$dbname = "avr_locacoes";
 
-
-    $conn = mysqli_connect($servername, $username, $password, $database);
-
-    if (!$conn) {
-        die("Conexão falhou. Erro: " . mysqli_connect_error());
-    }
+try {
+    $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
+    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+   // echo "Conexão bem-sucedida!";
+} catch (PDOException $e) {
+    $msg = array("codigo" => 0, "texto" => "Erro de Conexão: " . $e->getMessage());
+    header('Content-Type: application/json; charset=utf-8');
+    echo(json_encode($msg));
+}
 ?>

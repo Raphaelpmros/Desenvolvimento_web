@@ -40,6 +40,39 @@
             cursor: pointer;
         }
     </style>
+    <script>
+        document.addEventListener("DOMContentLoaded",()=>{
+            
+            function logar(){
+                let form=document.querySelector("#Login");
+                postForm('Login.php',form).then((res)=>{
+                        if(res.data.codigo=="1"){
+                            Swal.fire({
+                                title: 'Sucesso',
+                                text: res.data.texto,
+                                icon: 'success',
+                                confirmButtonText: 'OK'
+                                });
+                                setTimeout(()=>{
+                                    window.location.href='PaginaInicial.html';
+                                },3000);
+                        }
+                        else{
+                            Swal.fire({
+                                title: 'Erro',
+                                text: res.data.texto,
+                                icon: 'error',
+                                confirmButtonText: 'OK'
+                                })
+                        }
+                })
+            }
+
+            document.querySelector("#btnLogar").addEventListener("click",()=>{
+                logar();
+            })
+        })
+    </script>
 </head>
 <body>
     <div class="body">
@@ -85,19 +118,23 @@
         </header>
         <div class="container">
             <h1 style="color: white;">Login</h1>
-            <form action="/login" method="post">
-            <label style="color: white;" for="usuario">Usuario:</label><br>
-            <input style="color: black;" type="text" id="usuario" name="usuario"><br>
-            <label style="color: white;" for="senha">Senha:</label><br>
-            <input style="color: black;" type="password" id="senha" name="senha"><br><br>
-            <input style="color: white;" type="submit" value="Login">
-            <a href="./CriarConta.html" style="color: white;" >Crie sua conta</a><br>
-            <a href="./esqueceuSenha.html" style="color: white;" >Esqueci minha senha</a>
+            <form  action="./Login.php" method="POST">
+                <div>
+                    <label style="color: white;" for="usuario">Usuario:</label><br>
+                    <input style="color: black;" type="text" id="usuario" name="username" required><br>
+                </div>
+                <div>
+                    <label style="color: white;" for="senha">Senha:</label><br>
+                    <input style="color: black;" type="password" id="senha" name="senha_cliente" required><br>
+                </div>
+                <input style="color: white;" id="btnLogar" type="submit" value="Login">
             </form> 
+                <a href="./CriarConta.html" style="color: white;" >Crie sua conta</a><br>
+                <a href="./esqueceuSenha.html" style="color: white;" >Esqueci minha senha</a>
+        </div>
         <footer>
             <p>&copy; 2023 Aluguel de Veículos</p>
         </footer>
-    </div>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 <script src="./script.js"></script>
