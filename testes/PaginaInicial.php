@@ -1,7 +1,7 @@
 <?php
 session_start();
  $login=false;
-    if($_SESSION["username"]){
+    if($_SESSION["username"] ?? null){
         $login=true;
         $nomeusuario=$_SESSION["nome"];
     }
@@ -27,21 +27,21 @@ session_start();
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="PaginaInicial.html" style="color: white;">Home</a>
+                    <a class="nav-link active" aria-current="page" href="PaginaInicial.php" style="color: white;">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="Reservas.html" style="color: white;">Reservas</a>
+                    <a class="nav-link" href="Reservas.php" style="color: white;">Reservas</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: white;">
                         Categorias
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="Economico.html">Economico</a></li>
-                        <li><a class="dropdown-item" href="Intermediario.html">Intermediario</a></li>
-                        <li><a class="dropdown-item" href="SUV.html">SUV</a></li>
-                        <li><a class="dropdown-item" href="Minivan.html">Minivan</a></li>
-                        <li><a class="dropdown-item" href="Executivo.html">Executivo</a></li>
+                        <li><a class="dropdown-item" href="Economico.php">Economico</a></li>
+                        <li><a class="dropdown-item" href="Intermediario.php">Intermediario</a></li>
+                        <li><a class="dropdown-item" href="SUV.php">SUV</a></li>
+                        <li><a class="dropdown-item" href="Minivan.php">Minivan</a></li>
+                        <li><a class="dropdown-item" href="Executivo.php">Executivo</a></li>
                     </ul>
                 </li>
                 <?php 
@@ -54,8 +54,12 @@ session_start();
                  }
                  else{
                     ?>
-                        <li class="nav-item">
-                        <a class="nav-link" href="perfil.php" style="color: white;"><?php echo($nomeusuario);?> - Perfil</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false" style="color: white;"><?php echo($nomeusuario);?> - Perfil</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="Perfil.php">Perfil</a></li>
+                            <li><a class="dropdown-item" href="logout.php">Sair</a></li>
+                        </ul>
                     </li>
                     <?php
                  }
