@@ -81,7 +81,7 @@ if ($_SESSION["username"]) {
             <p>Combustível: Etanol</p>
             <p>Preço Diária: R$103,00 </p>
 
-            <button type="button" id="reserve-button-civic"><a href="./Reservas.html">Reservar Veículo</a></button>
+            <button type="button" id="reserve-button-civic"><a href="./Reserva_intermediario.php">Reservar Veículo</a></button>
         </div>
 
         <div class="vehicle">
@@ -92,7 +92,7 @@ if ($_SESSION["username"]) {
             <p>Combustível: Etanol</p>
             <p>Preço Diária: R$103,00 </p>
 
-            <button type="button" id="reserve-button-mazda6"><a href="./Reservas.html">Reservar Veículo</a></button>
+            <button type="button" id="reserve-button-mazda6"><a href="./Reserva_intermediario.php">Reservar Veículo</a></button>
         </div>
 
         <div class="vehicle">
@@ -103,7 +103,7 @@ if ($_SESSION["username"]) {
             <p>Combustível: Gasolina</p>
             <p>Preço Diária: R$103,00 </p>
 
-            <button type="button" id="reserve-button-malibu"><a href="./Reservas.html">Reservar Veículo</a></button>
+            <button type="button" id="reserve-button-malibu"><a href="./Reserva_intermediario.php">Reservar Veículo</a></button>
         </div>
 
         <div class="vehicle">
@@ -114,7 +114,7 @@ if ($_SESSION["username"]) {
             <p>Combustível: Etanol</p>
             <p>Preço Diária: R$103,00</p>
 
-            <button type="button" id="reserve-button-altima"><a href="./Reservas.html">Reservar Veículo</a></button>
+            <button type="button" id="reserve-button-altima"><a href="./Reserva_intermediario.php">Reservar Veículo</a></button>
         </div>
 
 

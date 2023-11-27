@@ -80,16 +80,16 @@
             <p>Condições do veículo: Novo</p>
             <p>Combustível: Gasolina</p>
             <p>Preço Diária: R$85,00 </p>
-            <button type="button" id="reserve-button-polo"> <a href="./Reservas.html">Reservar Veículo</a></button>
+            <button type="button" id="reserve-button-polo"> <a href="./Reserva_economico.html">Reservar Veículo</a></button>
         </div>
         <div class="vehicle">
             <img src="./assets/Img_economico/Hyundai_i20.jpg" alt="Carro Econômico">
             <h2>Hyundai i20<br>2023</h2>
             <p>Um hatch compacto e econômico para viagens eficientes e práticas.<br> <br> <br>O Hyundai i20 oferece economia de combustível e um design moderno. Com espaço suficiente para passageiros e bagagem, é uma escolha inteligente para viagens econômicas. Alugue o Hyundai i20 hoje e desfrute da conveniência e da eficiência.</p>
             <p>Condições do veículo: Amassado no porta-malas</p>
-            <p>Combustível: Etanol</p>
+            <p>Combustível: Etanol</p>  
             <p>Preço Diária: R$85,00 </p>
-            <button type="button" id="reserve-button-i20"><a href="./Reservas.html">Reservar Veículo</a></button>
+            <button type="button" id="reserve-button-i20"><a href="./Reserva_economico.html">Reservar Veículo</a></button>
         </div>
         <div class="vehicle">
             <img src="./assets/Img_economico/Ford_Fiesta_2023.png" alt="Carro Econômico">
@@ -99,7 +99,7 @@
             <p>Combustível: Etanol</p>
             <p>Preço Diária: R$85,00 </p>
 
-            <button type="button" id="reserve-button-fiesta"><a href="./Reservas.html">Reservar Veículo</a></button>
+            <button type="button" id="reserve-button-fiesta"><a href="./Reserva_economico.html">Reservar Veículo</a></button>
         </div>
         <div class="vehicle">
             <img src="./assets/Img_economico/Toyota_Yaris_2023.jpg" alt="Carro Econômico">
@@ -108,7 +108,7 @@
             <p>Condições do veículo: Novo</p>
             <p>Combustível: Etanol</p>
             <p>Preço Diária: R$85,00 </p>
-            <button type="button" id="reserve-button-yaris"><a href="./Reservas.html">Reservar Veículo</a></button>
+            <button type="button" id="reserve-button-yaris"><a href="./Reserva_economico.html">Reservar Veículo</a></button>
         </div>
         <section id="reservation" class="reservation-container hidden">
             <h2>Reserva de Veículo</h2>

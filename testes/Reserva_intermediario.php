@@ -1,4 +1,7 @@
 <?php
+
+require("conecta.php");
+
 session_start();
 $login = false;
 if ($_SESSION["username"]) {
@@ -121,16 +124,16 @@ if ($_SESSION["username"]) {
             <h2>Dados da Reserva</h2>
 
             <div>
-                <label for="categoria">Categoria do Veículo:</label>
-                <select id="categoria" name="categoria">
-                    <option value="economico">Econômico</option>
-                    <option value="intermediario">Intermediário</option>
-                    <option value="suv">SUV</option>
-                    <option value="minivan">Minivan</option>
-                    <option value="executivo">Executivo</option>
-                </select>
-            </div>
-
+    <label for="categoria">Categoria do Veículo:</label>
+    <input type="hidden" name="categoria" value="intermediario">
+    <select id="categoria" name="categoria" disabled>
+        <option value="economico">Intermediário</option>
+        <option value="intermediario">Intermediário</option>
+        <option value="suv">SUV</option>
+        <option value="minivan">Minivan</option>
+        <option value="executivo">Executivo</option>
+    </select>
+</div>
 
             <label for="data_retirada">Data e Hora de Retirada:</label>
             <input type="datetime-local" id="data_retirada" name="data_retirada" required><br>

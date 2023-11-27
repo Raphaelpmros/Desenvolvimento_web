@@ -81,7 +81,7 @@ if ($_SESSION["username"]) {
             <p>Combustível: Etanol</p>
             <p>Preço Diária: R$158,00</p>
 
-            <button type="button" id="reserve-button-odyssey"><a href="./Reservas.html">Reservar Veículo</a></button>
+            <button type="button" id="reserve-button-odyssey"><a href="./Reserva_minivan.php">Reservar Veículo</a></button>
         </div>
 
         <div class="vehicle">
@@ -92,7 +92,7 @@ if ($_SESSION["username"]) {
             <p>Combustível: Etanol</p>
             <p>Preço Diária: R$158,00</p>
 
-            <button type="button" id="reserve-button-sienna"><a href="./Reservas.html">Reservar Veículo</a></button>
+            <button type="button" id="reserve-button-sienna"><a href="./Reserva_minivan.php">Reservar Veículo</a></button>
         </div>
 
         <div class="vehicle">
@@ -102,7 +102,7 @@ if ($_SESSION["username"]) {
             <p>Condições do veículo: Amassado no porta-malas</p>
             <p>Combustível: Etanol</p>
             <p>Preço Diária: R$158,00</p>
-            <button type="button" id="reserve-button-pacifica"><a href="./Reservas.html">Reservar Veículo</a></button>
+            <button type="button" id="reserve-button-pacifica"><a href="./Reserva_minivan.php">Reservar Veículo</a></button>
         </div>
 
         <div class="vehicle">
@@ -113,7 +113,7 @@ if ($_SESSION["username"]) {
             <p>Combustível: Etanol</p>
             <p>Preço Diária: R$158,00</p>
 
-            <button type="button" id="reserve-button-sedona"><a href="./Reservas.html">Reservar Veículo</a></button>
+            <button type="button" id="reserve-button-sedona"><a href="./Reserva_minivan.php">Reservar Veículo</a></button>
         </div>
         <section id="reservation" class="reservation-container hidden">
             <h2>Reserva de Veículo</h2>

@@ -81,7 +81,7 @@ if ($_SESSION["username"]) {
             <p>Combustível: Diesel-S10</p>
             <p>Preço Diária: R$135,00</p>
 
-            <button type="button" id="reserve-button-rav4"><a href="./Reservas.html">Reservar Veículo</a></button>
+            <button type="button" id="reserve-button-rav4"><a href="./Reserva_suv.php">Reservar Veículo</a></button>
         </div>
 
         <div class="vehicle">
@@ -92,7 +92,7 @@ if ($_SESSION["username"]) {
             <p>Combustível: Diesel-S10</p>
             <p>Preço Diária: R$135,00</p>
 
-            <button type="button" id="reserve-button-cr-v"><a href="./Reservas.html">Reservar Veículo</a></button>
+            <button type="button" id="reserve-button-cr-v"><a href="./Reserva_suv.php">Reservar Veículo</a></button>
         </div>
 
         <div class="vehicle">
@@ -103,7 +103,7 @@ if ($_SESSION["username"]) {
             <p>Combustível: Diesel-S10</p>
             <p>Preço Diária: R$135,00</p>
 
-            <button type="button" id="reserve-button-explorer"><a href="./Reservas.html">Reservar Veículo</a></button>
+            <button type="button" id="reserve-button-explorer"><a href="./Reserva_suv.php">Reservar Veículo</a></button>
         </div>
 
         <div class="vehicle">
@@ -114,7 +114,7 @@ if ($_SESSION["username"]) {
             <p>Combustível: Diesel-S10</p>
             <p>Preço Diária: R$135,00</p>
 
-            <button type="button" id="reserve-button-tahoe"><a href="./Reservas.html">Reservar Veículo</a></button>
+            <button type="button" id="reserve-button-tahoe"><a href="./Reserva_suv.php">Reservar Veículo</a></button>
         </div>
         <footer>
             <p>&copy; 2023 Aluguel de Veículos</p>
