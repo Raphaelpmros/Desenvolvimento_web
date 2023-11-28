@@ -116,7 +116,6 @@ if ($_SESSION["username"]) {
             </nav>
         </header>
 
-
         <h1>Reserva de Veículos</h1>
         <form class="container" action="cadastra_reserva.php" method="POST">
             <h2>Dados da Reserva</h2>
@@ -139,7 +138,7 @@ if ($_SESSION["username"]) {
             <input type="datetime-local" id="data_devolucao" name="data_devolucao" required><br>
 
             <label for="usuario">Informações da CNH:</label><br>
-            <input type="text" id="usuario" name="cnh_cliente"><br>
+            <input type="text" id="usuario" name="usuario"><br>
 
             <input type="checkbox" id="motoristaAdicionalCheckbox" name="motorista_adicional" onchange="mostrarCamposMotoristaAdicional(this)">
             <label for="motoristaAdicionalCheckbox">Desejo um motorista adicional</label>
@@ -158,14 +157,17 @@ if ($_SESSION["username"]) {
 
             <label for="opcionais">Opcionais (selecionar os desejados):</label><br>
 
-            <input type="checkbox" id="cadeira_bebe" name="cadeira_bebe" value="cadeira_bebe">
+            <input type="checkbox" id="cadeira_bebe" name="opcionais[]" value="cadeira_bebe">
             <label for="cadeira_bebe">Cadeira de Bebê (R$30/dia)</label><br>
 
-            <input type="checkbox" id="assento_elevacao" name="assento_elevacao" value="assento_elevacao">
+            <input type="checkbox" id="assento_elevacao" name="opcionais[]" value="assento_elevacao">
             <label for="assento_elevacao">Assento de Elevação (R$30/dia)</label><br>
 
-            <input type="checkbox" id="gps" name="gps" value="gps">
+            <input type="checkbox" id="gps" name="opcionais[]" value="gps">
             <label for="gps">GPS (R$20/dia)</label><br>
+
+            <input type="checkbox" id="condutor-adicional" name="opcionais[]" value="condutor_adicional">
+            <label for="condutor-adicional">Condutor Adicional (R$15/dia)</label>
 
             <input type="checkbox" id="termos" name="termos" value="validar-termos">
             <label for="termos"><a href="Termos.html">Li e aceito os termos!</a></label>
