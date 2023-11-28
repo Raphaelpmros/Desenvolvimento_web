@@ -143,7 +143,7 @@ if ($_SESSION["username"] ?? null) {
             <input type="datetime-local" id="data_devolucao" name="data_devolucao" required><br>
 
             <label for="usuario">Informações da CNH:</label><br>
-            <input type="text" id="usuario" name="usuario"><br>
+            <input type="text" id="usuario" name="cnh_cliente"><br>
 
             <input type="checkbox" id="motoristaAdicionalCheckbox" name="motorista_adicional" onchange="mostrarCamposMotoristaAdicional(this)">
             <label for="motoristaAdicionalCheckbox">Desejo um motorista adicional</label>
