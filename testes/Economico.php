@@ -1,10 +1,7 @@
 <?php
-
-require("conecta.php");
-
 session_start();
 $login = false;
-if ($_SESSION["username"]) {
+if ($_SESSION["username"] ?? null) {
     $login = true;
     $nomeusuario = $_SESSION["nome"];
 }
@@ -59,8 +56,12 @@ if ($_SESSION["username"]) {
                         <?php
                         } else {
                         ?>
-                            <li class="nav-item">
-                                <a class="nav-link" href="perfil.php" style="color: white;"><?php echo ($nomeusuario); ?> - Perfil</a>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false" style="color: white;"><?php echo ($nomeusuario); ?> - Perfil</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="Perfil.php">Perfil</a></li>
+                                    <li><a class="dropdown-item" href="logout.php">Sair</a></li>
+                                </ul>
                             </li>
                         <?php
                         }
@@ -83,7 +84,7 @@ if ($_SESSION["username"]) {
             <p>Condições do veículo: Novo</p>
             <p>Combustível: Gasolina</p>
             <p>Preço Diária: R$85,00 </p>
-            <button type="button" id="reserve-button-polo"> <a href="./Reserva_economico.html">Reservar Veículo</a></button>
+            <button type="button" id="reserve-button-polo"> <a href="./Reserva_economico.php">Reservar Veículo</a></button>
         </div>
         <div class="vehicle">
             <img src="./assets/Img_economico/Hyundai_i20.jpg" alt="Carro Econômico">
@@ -92,7 +93,7 @@ if ($_SESSION["username"]) {
             <p>Condições do veículo: Amassado no porta-malas</p>
             <p>Combustível: Etanol</p>
             <p>Preço Diária: R$85,00 </p>
-            <button type="button" id="reserve-button-i20"><a href="./Reserva_economico.html">Reservar Veículo</a></button>
+            <button type="button" id="reserve-button-i20"><a href="./Reserva_economico.php">Reservar Veículo</a></button>
         </div>
         <div class="vehicle">
             <img src="./assets/Img_economico/Ford_Fiesta_2023.png" alt="Carro Econômico">
@@ -102,7 +103,7 @@ if ($_SESSION["username"]) {
             <p>Combustível: Etanol</p>
             <p>Preço Diária: R$85,00 </p>
 
-            <button type="button" id="reserve-button-fiesta"><a href="./Reserva_economico.html">Reservar Veículo</a></button>
+            <button type="button" id="reserve-button-fiesta"><a href="./Reserva_economico.php">Reservar Veículo</a></button>
         </div>
         <div class="vehicle">
             <img src="./assets/Img_economico/Toyota_Yaris_2023.jpg" alt="Carro Econômico">
@@ -111,7 +112,7 @@ if ($_SESSION["username"]) {
             <p>Condições do veículo: Novo</p>
             <p>Combustível: Etanol</p>
             <p>Preço Diária: R$85,00 </p>
-            <button type="button" id="reserve-button-yaris"><a href="./Reserva_economico.html">Reservar Veículo</a></button>
+            <button type="button" id="reserve-button-yaris"><a href="./Reserva_economico.php">Reservar Veículo</a></button>
         </div>
         <section id="reservation" class="reservation-container hidden">
             <h2>Reserva de Veículo</h2>

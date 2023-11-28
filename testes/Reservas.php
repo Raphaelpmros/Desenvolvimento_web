@@ -1,13 +1,11 @@
 <?php
-
 session_start();
 $login = false;
-if ($_SESSION["username"]) {
+if ($_SESSION["username"] ?? null) {
     $login = true;
     $nomeusuario = $_SESSION["nome"];
 }
 ?>
-
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -92,20 +90,24 @@ if ($_SESSION["username"]) {
                                 </ul>
                             </li>
                             <?php
-                            if (!$login) {
-                            ?>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="Login.html" style="color: white;">Login</a>
-                                </li>
-                            <?php
-                            } else {
-                            ?>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="perfil.php" style="color: white;"><?php echo ($nomeusuario); ?> - Perfil</a>
-                                </li>
-                            <?php
-                            }
-                            ?>
+                        if (!$login) {
+                        ?>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Login.html" style="color: white;">Login</a>
+                            </li>
+                        <?php
+                        } else {
+                        ?>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false" style="color: white;"><?php echo ($nomeusuario); ?> - Perfil</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="Perfil.php">Perfil</a></li>
+                                    <li><a class="dropdown-item" href="logout.php">Sair</a></li>
+                                </ul>
+                            </li>
+                        <?php
+                        }
+                        ?>
                         </ul>
                         <form class="d-flex" role="search">
                             <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">

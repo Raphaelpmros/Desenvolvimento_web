@@ -1,8 +1,7 @@
 <?php
-
 session_start();
 $login = false;
-if ($_SESSION["username"]) {
+if ($_SESSION["username"] ?? null) {
     $login = true;
     $nomeusuario = $_SESSION["nome"];
 }
@@ -92,20 +91,24 @@ if ($_SESSION["username"]) {
                                 </ul>
                             </li>
                             <?php
-                            if (!$login) {
-                            ?>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="Login.html" style="color: white;">Login</a>
-                                </li>
-                            <?php
-                            } else {
-                            ?>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="perfil.php" style="color: white;"><?php echo ($nomeusuario); ?> - Perfil</a>
-                                </li>
-                            <?php
-                            }
-                            ?>
+                        if (!$login) {
+                        ?>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Login.html" style="color: white;">Login</a>
+                            </li>
+                        <?php
+                        } else {
+                        ?>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false" style="color: white;"><?php echo ($nomeusuario); ?> - Perfil</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="Perfil.php">Perfil</a></li>
+                                    <li><a class="dropdown-item" href="logout.php">Sair</a></li>
+                                </ul>
+                            </li>
+                        <?php
+                        }
+                        ?>
                         </ul>
                         <form class="d-flex" role="search">
                             <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
@@ -125,7 +128,7 @@ if ($_SESSION["username"]) {
                 <label for="categoria">Categoria do Veículo:</label>
                 <input type="hidden" name="categoria" value="economico">
                 <select id="categoria" name="categoria" disabled>
-                    <option value="economico">Econômico</option>
+                    <option value="economico" selected>Econômico</option>
                     <option value="intermediario">Intermediário</option>
                     <option value="suv">SUV</option>
                     <option value="minivan">Minivan</option>
@@ -140,7 +143,10 @@ if ($_SESSION["username"]) {
             <input type="datetime-local" id="data_devolucao" name="data_devolucao" required><br>
 
             <label for="usuario">Informações da CNH:</label><br>
-            <input type="text" id="usuario" name="cnh_cliente><br>
+            <input type="text" id="usuario" name="usuario"><br>
+
+            <input type="checkbox" id="motoristaAdicionalCheckbox" name="motorista_adicional" onchange="mostrarCamposMotoristaAdicional(this)">
+            <label for="motoristaAdicionalCheckbox">Desejo um motorista adicional</label>
 
             <div id="camposMotoristaAdicional" style="display: none;">
                 <input type="text" name="nome_motorista" placeholder="Nome do motorista">

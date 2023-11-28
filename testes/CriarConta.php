@@ -1,7 +1,7 @@
 <?php
 session_start();
 $login = false;
-if ($_SESSION["username"]) {
+if ($_SESSION["username"] ?? null) {
     $login = true;
     $nomeusuario = $_SESSION["nome"];
 }

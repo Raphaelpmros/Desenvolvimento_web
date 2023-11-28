@@ -105,7 +105,7 @@ if ($_SESSION["username"] ?? null) {
                 <p>Carros compactos para o seu dia a dia. Ideal para viagens curtas.<br> <br> <br>O Fiat Mobi é um compacto, ágil e econômico, ideal para suas deslocações urbanas. Com um design compacto e prático, o Mobi oferece facilidade de estacionamento e eficiência no consumo de combustível. Seu interior é confortável e versátil, tornando-o perfeito para viagens urbanas. Alugue o Fiat Mobi hoje e aproveite a mobilidade e a praticidade que ele oferece.</p>
                 <p>Preço Diária: R$85,00 </p>
 
-                <button type="button" id="reserve-button-mobi"><a href="./Reserva_economico.php">Reservar Veículo</a></button>
+                <button type="button" id="reserve-button-mobi"><a href="./Reservas.html">Reservar Veículo</a></button>
 
             </div>
 
@@ -114,7 +114,7 @@ if ($_SESSION["username"] ?? null) {
                 <h2>Onix<br>2021</h2>
                 <p>Carros hatch ou sedan com mais espaço e conforto.<br> <br> <br>Descubra o Chevrolet Onix, um compacto versátil e econômico, perfeito para suas aventuras urbanas. Com um design moderno e eficiência no consumo de combustível, o Onix oferece conforto e tecnologia para tornar suas viagens ainda mais resistentes. Equipado com recursos de segurança avançados e um interior espaçoso, o Onix é a escolha ideal para explorar a cidade com estilo e praticidade. Alugue o Chevrolet Onix hoje e experimente a combinação perfeita de desempenho e economia.</p>
                 <p>Preço Diária: R$103,00</p>
-                <button type="button" id="reserve-button-onix"><a href="./Reserva_intermediario.php">Reservar Veículo</a></button>
+                <button type="button" id="reserve-button-onix"><a href="./Reservas.html">Reservar Veículo</a></button>
 
             </div>
 
@@ -123,7 +123,7 @@ if ($_SESSION["username"] ?? null) {
                 <h2>Creta<br>2020</h2>
                 <p>Veículos SUV para aventuras e espaço extra.<br> <br> <br>O Hyundai Creta é um SUV compacto projetado para aventuras urbanas e além. Com um design moderno e robusto, o Creta oferece espaço, conforto e conforto. Equipado com recursos de segurança avançados e uma gama de opções de motorização, o Creta é perfeito para famílias e aventureiros. Alugue o Hyundai Creta e explore a cidade com estilo e confiança.</p>
                 <p>Preço Diária: R$135,00</p>
-                <button type="button" id="reserve-button-creta"><a href="./Reserva_suv.php">Reservar Veículo</a></button>
+                <button type="button" id="reserve-button-creta"><a href="./Reservas.html">Reservar Veículo</a></button>
 
             </div>
 
@@ -132,7 +132,7 @@ if ($_SESSION["username"] ?? null) {
                 <h2>livina<br>2018</h2>
                 <p>Minivans espaçosas para viagens em grupo ou família.<br> <br> <br>O Fiat Mobi é um compacto, ágil e econômico, ideal para suas deslocações urbanas. Com um design compacto e prático, o Mobi oferece facilidade de estacionamento e eficiência no consumo de combustível. Seu interior é confortável e versátil, tornando-o perfeito para viagens urbanas. Alugue o Fiat Mobi hoje e aproveite a mobilidade e a praticidade que ele oferece.</p>
                 <p>Preço Diária: R$158,00</p>
-                <button type="button" id="reserve-button"><a href="./Reserva_minivan.php">Reservar Veículo</a></button>
+                <button type="button" id="reserve-button"><a href="./Reservas.html">Reservar Veículo</a></button>
 
             </div>
 
@@ -142,7 +142,7 @@ if ($_SESSION["username"] ?? null) {
                 <p>Carros de luxo para viagens de negócios e conforto extra.<br> <br> <br>O Nissan Livina é um carro familiar versátil que combina espaço, conforto e praticidade. Com amplo espaço para passageiros e bagagem, o Livina é perfeito para viagens em família. Sua tecnologia avançada e eficiência no consumo de combustível garantem uma experiência agradável na estrada. Alugue o Nissan Livina e aproveite viagens confortáveis e sem complicações.</p>
 
                 <p>Preço Diária: R$230,00</p>
-                <button type="button" id="reserve-button"><a href="./Reserva_executivo.php">Reservar Veículo</a></button>
+                <button type="button" id="reserve-button"><a href="./Reservas.html">Reservar Veículo</a></button>
             </div>
             <footer>
                 <p>&copy; 2023 Aluguel de Veículos</p>

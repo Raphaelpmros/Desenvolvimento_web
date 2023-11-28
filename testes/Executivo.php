@@ -1,7 +1,7 @@
 <?php
 session_start();
 $login = false;
-if ($_SESSION["username"]) {
+if ($_SESSION["username"] ?? null) {
     $login = true;
     $nomeusuario = $_SESSION["nome"];
 }
@@ -56,8 +56,12 @@ if ($_SESSION["username"]) {
                         <?php
                         } else {
                         ?>
-                            <li class="nav-item">
-                                <a class="nav-link" href="perfil.php" style="color: white;"><?php echo ($nomeusuario); ?> - Perfil</a>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false" style="color: white;"><?php echo ($nomeusuario); ?> - Perfil</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="Perfil.php">Perfil</a></li>
+                                    <li><a class="dropdown-item" href="logout.php">Sair</a></li>
+                                </ul>
                             </li>
                         <?php
                         }
