@@ -1,11 +1,13 @@
 <?php
+
 session_start();
 $login = false;
-if ($_SESSION["username"] ?? null) {
+if ($_SESSION["username"]) {
     $login = true;
     $nomeusuario = $_SESSION["nome"];
 }
 ?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -90,24 +92,20 @@ if ($_SESSION["username"] ?? null) {
                                 </ul>
                             </li>
                             <?php
-                        if (!$login) {
-                        ?>
-                            <li class="nav-item">
-                                <a class="nav-link" href="Login.html" style="color: white;">Login</a>
-                            </li>
-                        <?php
-                        } else {
-                        ?>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false" style="color: white;"><?php echo ($nomeusuario); ?> - Perfil</a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="Perfil.php">Perfil</a></li>
-                                    <li><a class="dropdown-item" href="logout.php">Sair</a></li>
-                                </ul>
-                            </li>
-                        <?php
-                        }
-                        ?>
+                            if (!$login) {
+                            ?>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="Login.html" style="color: white;">Login</a>
+                                </li>
+                            <?php
+                            } else {
+                            ?>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="perfil.php" style="color: white;"><?php echo ($nomeusuario); ?> - Perfil</a>
+                                </li>
+                            <?php
+                            }
+                            ?>
                         </ul>
                         <form class="d-flex" role="search">
                             <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
@@ -118,12 +116,14 @@ if ($_SESSION["username"] ?? null) {
             </nav>
         </header>
 
+
         <h1>Reserva de Veículos</h1>
         <form class="container" action="cadastra_reserva.php" method="POST">
             <h2>Dados da Reserva</h2>
 
             <div>
                 <label for="categoria">Categoria do Veículo:</label>
+                <input type="hidden" name="categoria" value="economico">
                 <select id="categoria" name="categoria">
                     <option value="economico">Econômico</option>
                     <option value="intermediario">Intermediário</option>
@@ -147,7 +147,7 @@ if ($_SESSION["username"] ?? null) {
 
             <div id="camposMotoristaAdicional" style="display: none;">
                 <input type="text" name="nome_motorista" placeholder="Nome do motorista">
-                <input type="text" name="cnh_motorista" placeholder="CNH do motorista">
+                <input type="text" name="cnh_cliente" placeholder="CNH do motorista">
             </div>
 
             <script>
