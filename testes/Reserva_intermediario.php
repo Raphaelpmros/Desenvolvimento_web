@@ -1,7 +1,5 @@
 <?php
 
-require("conecta.php");
-
 session_start();
 $login = false;
 if ($_SESSION["username"]) {
