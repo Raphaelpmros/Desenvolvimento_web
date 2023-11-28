@@ -17,13 +17,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         VALUES (:categoria, :data_retirada, :data_devolucao, :cnh_cliente, :cadeira_bebe, :assento_elevacao, :gps)");
 
         // Ajuste: Atribua as variáveis diretamente a bindParam, sem a necessidade de passar por variáveis intermediárias
-$stmt->bindParam(':categoria', $categoria);
-$stmt->bindParam(':data_retirada', $data_retirada);
-$stmt->bindParam(':data_devolucao', $data_devolucao);
-$stmt->bindParam(':cnh_cliente', $cnh_cliente);
-$stmt->bindParam(':cadeira_bebe', $cadeira_bebe);
-$stmt->bindParam(':assento_elevacao', $assento_elevacao);
-$stmt->bindParam(':gps', $gps);
+        $stmt->bindParam(':categoria', $categoria);
+        $stmt->bindParam(':data_retirada', $data_retirada);
+        $stmt->bindParam(':data_devolucao', $data_devolucao);
+        $stmt->bindParam(':cnh_cliente', $cnh_cliente);
+        $cadeira_bebe = isset($_POST['cadeira_bebe']) ? '1' : '0';
+        $assento_elevacao = isset($_POST['assento_elevacao']) ? '1' : '0';
+        $gps = isset($_POST['gps']) ? '1' : '0';
+
+        $stmt->bindParam(':cadeira_bebe', $cadeira_bebe);
+        $stmt->bindParam(':assento_elevacao', $assento_elevacao);
+        $stmt->bindParam(':gps', $gps);
 
         $stmt->execute();
 

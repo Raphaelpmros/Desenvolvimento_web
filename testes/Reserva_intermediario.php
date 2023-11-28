@@ -91,24 +91,24 @@ if ($_SESSION["username"] ?? null) {
                                 </ul>
                             </li>
                             <?php
-                        if (!$login) {
-                        ?>
-                            <li class="nav-item">
-                                <a class="nav-link" href="Login.html" style="color: white;">Login</a>
-                            </li>
-                        <?php
-                        } else {
-                        ?>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false" style="color: white;"><?php echo ($nomeusuario); ?> - Perfil</a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="Perfil.php">Perfil</a></li>
-                                    <li><a class="dropdown-item" href="logout.php">Sair</a></li>
-                                </ul>
-                            </li>
-                        <?php
-                        }
-                        ?>
+                            if (!$login) {
+                            ?>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="Login.html" style="color: white;">Login</a>
+                                </li>
+                            <?php
+                            } else {
+                            ?>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false" style="color: white;"><?php echo ($nomeusuario); ?> - Perfil</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="Perfil.php">Perfil</a></li>
+                                        <li><a class="dropdown-item" href="logout.php">Sair</a></li>
+                                    </ul>
+                                </li>
+                            <?php
+                            }
+                            ?>
                         </ul>
                         <form class="d-flex" role="search">
                             <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
@@ -162,15 +162,14 @@ if ($_SESSION["username"] ?? null) {
 
             <label for="opcionais">Opcionais (selecionar os desejados):</label><br>
 
-            <input type="checkbox" id="cadeira_bebe" name="opcionais[]" value="cadeira_bebe">
+            <input type="checkbox" id="cadeira_bebe" name="cadeira_bebe" value="cadeira_bebe">
             <label for="cadeira_bebe">Cadeira de Bebê (R$30/dia)</label><br>
 
-            <input type="checkbox" id="assento_elevacao" name="opcionais[]" value="assento_elevacao">
+            <input type="checkbox" id="assento_elevacao" name="assento_elevacao" value="assento_elevacao">
             <label for="assento_elevacao">Assento de Elevação (R$30/dia)</label><br>
 
-            <input type="checkbox" id="gps" name="opcionais[]" value="gps">
+            <input type="checkbox" id="gps" name="gps" value="gps">
             <label for="gps">GPS (R$20/dia)</label><br>
-
             <input type="checkbox" id="condutor-adicional" name="opcionais[]" value="condutor_adicional">
             <label for="condutor-adicional">Condutor Adicional (R$15/dia)</label>
 
