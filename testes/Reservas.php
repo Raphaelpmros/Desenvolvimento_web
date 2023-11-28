@@ -144,14 +144,14 @@ if ($_SESSION["username"]) {
             <input type="datetime-local" id="data_devolucao" name="data_devolucao" required><br>
 
             <label for="usuario">Informações da CNH:</label><br>
-            <input type="text" id="usuario" name="usuario"><br>
+            <input type="text" id="usuario" name="cnh_cliente"><br>
 
             <input type="checkbox" id="motoristaAdicionalCheckbox" name="motorista_adicional" onchange="mostrarCamposMotoristaAdicional(this)">
             <label for="motoristaAdicionalCheckbox">Desejo um motorista adicional</label>
 
             <div id="camposMotoristaAdicional" style="display: none;">
                 <input type="text" name="nome_motorista" placeholder="Nome do motorista">
-                <input type="text" name="cnh_cliente" placeholder="CNH do motorista">
+                <input type="text" name="cnh_adicional" placeholder="CNH do motorista">
             </div>
 
             <script>
