@@ -118,7 +118,7 @@ if ($_SESSION["username"]) {
 
 
         <h1>Reserva de Veículos</h1>
-        <form class="container" action="processar_reserva.php" method="POST">
+        <form class="container" action="cadastra_reserva.php" method="POST">
             <h2>Dados da Reserva</h2>
 
             <div>
@@ -140,10 +140,7 @@ if ($_SESSION["username"]) {
             <input type="datetime-local" id="data_devolucao" name="data_devolucao" required><br>
 
             <label for="usuario">Informações da CNH:</label><br>
-            <input type="text" id="usuario" name="usuario"><br>
-
-            <input type="checkbox" id="motoristaAdicionalCheckbox" name="motorista_adicional" onchange="mostrarCamposMotoristaAdicional(this)">
-            <label for="motoristaAdicionalCheckbox">Desejo um motorista adicional</label>
+            <input type="text" id="usuario" name="cnh_cliente><br>
 
             <div id="camposMotoristaAdicional" style="display: none;">
                 <input type="text" name="nome_motorista" placeholder="Nome do motorista">
