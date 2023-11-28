@@ -1,10 +1,10 @@
 <?php
-    session_start();
-    $login = false;
-    if ($_SESSION["username"]) {
-        $login = true;
-        $nomeusuario = $_SESSION["nome"];
-    }
+session_start();
+$login = false;
+if ($_SESSION["username"]) {
+    $login = true;
+    $nomeusuario = $_SESSION["nome"];
+}
 ?>
 
 <!DOCTYPE html>
@@ -87,7 +87,7 @@
             <h2>Hyundai i20<br>2023</h2>
             <p>Um hatch compacto e econômico para viagens eficientes e práticas.<br> <br> <br>O Hyundai i20 oferece economia de combustível e um design moderno. Com espaço suficiente para passageiros e bagagem, é uma escolha inteligente para viagens econômicas. Alugue o Hyundai i20 hoje e desfrute da conveniência e da eficiência.</p>
             <p>Condições do veículo: Amassado no porta-malas</p>
-            <p>Combustível: Etanol</p>  
+            <p>Combustível: Etanol</p>
             <p>Preço Diária: R$85,00 </p>
             <button type="button" id="reserve-button-i20"><a href="./Reserva_economico.html">Reservar Veículo</a></button>
         </div>
